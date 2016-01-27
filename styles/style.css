@@ -42,6 +42,7 @@ svg {
     right: 0;
     margin: auto;
     animation: opa 2s ease-in forwards;
+    font-size: 16px;
 }
 
 footer {
