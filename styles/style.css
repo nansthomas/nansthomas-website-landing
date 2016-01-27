@@ -3,3 +3,79 @@ html, body {
     width: 100%;
     background: #0E0E0E;
 }
+svg {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    fill-opacity: 0;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+#logo {
+    fill: white;
+    stroke: white;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+}
+
+.tagline {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 17.2px;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0;
+    width: 268px;
+    height: 20px;
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: opa 2s ease-in forwards;
+}
+
+footer {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes appear {
+    to {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes opa {
+    to {
+        opacity: 1;
+    }
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: black;
+}
+
+::selection {
+    background: black;
+}
